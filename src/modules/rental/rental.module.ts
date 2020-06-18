@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 // import { NgPipesModule } from 'ngx-pipes';
 
 import { RentalRoutingModule } from './rental-routing.module';
+import { MapModule } from '../map/map.module';
 
 import { RentalService } from './services/rental.service';
 
@@ -16,7 +17,7 @@ import { UcwordsPipe } from './pipes/ucwords.pipe';
 import { UpperPipe } from './pipes/upper.pipe';
 @NgModule({
   declarations: [RentalComponent, RentalListComponent, RentalListItemComponent, RentalDetailComponent, UcwordsPipe, UpperPipe],
-  imports: [CommonModule, HttpClientModule, RentalRoutingModule],
+  imports: [CommonModule, HttpClientModule, RentalRoutingModule, MapModule],
   providers: [RentalService]
 })
 export class RentalModule { }
